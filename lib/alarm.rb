@@ -7,6 +7,10 @@ class Alarm
   def self.create_pressure_alarm
     new(Sensor.new)
   end
+
+  def self.create_alarm sensor
+    new(sensor)
+  end
   
   def initialize sensor
     @sensor = sensor
