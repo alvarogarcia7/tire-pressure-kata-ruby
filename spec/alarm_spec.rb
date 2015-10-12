@@ -26,22 +26,11 @@ describe Alarm do
   end
 end
 
-class FakeAlarm < Alarm
-  def initialize value
-    @value = value
-  end
-
-  def sample_pressure
-    @value
-  end
-end
-
 def sensor_sampling(value)
   sensor = double()
   allow(sensor).to receive(:pop_next_pressure_psi_value) { value }
   sensor
 end
-
 
 def alarm_with_sensor_sampling(value)
   sensor = sensor_sampling(value)
