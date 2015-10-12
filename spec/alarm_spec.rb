@@ -28,7 +28,7 @@ end
 
 def sensor_sampling(value)
   sensor = double()
-  allow(sensor).to receive(:pop_next_pressure_psi_value) { value }
+  allow(sensor).to receive(:sample_value) { value }
   sensor
 end
 
