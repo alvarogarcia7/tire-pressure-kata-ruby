@@ -34,5 +34,5 @@ end
 
 def alarm_with_sensor_sampling(value)
   sensor = sensor_sampling(value)
-  Alarm.create_alarm(sensor)
+  Alarm.create_alarm(sensor, SafetyRange.new(17, 21))
 end
