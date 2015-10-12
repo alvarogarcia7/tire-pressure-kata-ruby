@@ -1,1 +1,8 @@
 load "alarm_usages.rb"
+load "lib/alarm.rb"
+class Alarm
+  def set_sensor sensor
+    @sensor = sensor
+  end
+end
+alarm = Alarm.new
