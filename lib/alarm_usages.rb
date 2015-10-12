@@ -1,3 +1,5 @@
+require_relative 'alarm'
+
 # Some code
 alarm = Alarm.new
 alarm.check
