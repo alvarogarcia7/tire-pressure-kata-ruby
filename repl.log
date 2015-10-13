@@ -1,1 +1,3 @@
 load "alarm_usages.rb"
+a=1
+a
