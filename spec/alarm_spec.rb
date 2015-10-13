@@ -1,7 +1,7 @@
 require_relative '../lib/alarm'
 
 describe Alarm do
-  it "is on" do
+  it "is on when the pressure is too low  " do
     alarm = FakeAlarm.new
 
     alarm.check
