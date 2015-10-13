@@ -16,7 +16,7 @@ class Alarm
   end
 
   def sample_pressure
-    #Confirmed, assigning to a variable returns the value of the variable
+    #Confirmed: explanations#10
     pressure = @sensor.pop_next_pressure_psi_value()
   end
 

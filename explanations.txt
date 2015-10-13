@@ -1,0 +1,4 @@
+
+10: Confirmed, assigning to a variable returns the value of the variable
+
+20: FakeAlarm should call super() [Alarm] to replicate the same behaviour, otherwise the @alarm_on will be nil instead of false and the behavior is not the same
